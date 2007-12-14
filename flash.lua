@@ -46,8 +46,13 @@ hooksecurefunc("ChatFrame_MessageEventHandler", function(event)
 	if(config[event]) then
 		if(event ~= "CHAT_MSG_CHANNEL") then
 			FCF_FlashTab()
-		elseif(this.channelList[arg8]) then
-			FCF_FlashTab()
+		else
+			for k, chan in pairs(this.channelList) do
+				if(chan == arg9) then
+					FCF_FlashTab()
+					break
+				end
+			end
 		end
 	end
 end)

@@ -1,0 +1,8 @@
+﻿## Interface: 20300
+## Title: Tenmetsu
+## Author: Haste
+## Version: 1.0
+## X-eMail: troeks@gmail.com
+## Notes: Enable the whisper flash behavior for other message types.
+
+flash.lua

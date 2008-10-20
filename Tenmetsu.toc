@@ -1,7 +1,7 @@
 ﻿## Interface: 20300
 ## Title: Tenmetsu
 ## Author: Haste
-## Version: 1.1
+## Version: 1.3
 ## X-eMail: troeks@gmail.com
 ## Notes: Enable the whisper flash behavior for other message types.
 

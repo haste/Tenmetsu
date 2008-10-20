@@ -42,12 +42,14 @@ local config = {
 	CHAT_MSG_BATTLEGROUND_LEADER = false,
 }
 
-hooksecurefunc("ChatFrame_MessageEventHandler", function(event)
+hooksecurefunc("ChatFrame_MessageEventHandler", function(self, event, ...)
+	local eventChan = select(9, ...)
+
 	if(config[event]) then
 		if(event ~= "CHAT_MSG_CHANNEL") then
 			FCF_FlashTab()
 		else
-			for k, chan in pairs(this.channelList) do
+			for _, chan in ipairs(self.channelList) do
 				if(chan == arg9) then
 					FCF_FlashTab()
 					break
